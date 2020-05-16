@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Highlight Tests"
+title: "Discrete Optimization by The University of Melbourne"
 categories: misc
 ---
 
