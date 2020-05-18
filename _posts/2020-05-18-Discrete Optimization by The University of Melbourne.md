@@ -25,3 +25,14 @@ author: "Ditikrushna Giri"
 		 - No garuantee if we have an optimal situation (in general)
 		 - The optimality of the solution depends upon the input
 		 - In general, we can always try to solve a problem using greedy approach and then improve over it using other methods
+ - **Modeling** [How to formalize an optimzation task as a mathematical model?] 
+	 - 1 dimensional knapsack problem
+		 - Set of items I, each item i in I
+		 - its weight Wi and value Vi
+		 - capacity K for a knapsack
+		 - ***Objective:*** Maximize the value, with items weight less than K
+	- ***First thing:*** Choose the decision variables ( they encode the result )
+	- ***Second thing:*** Model the problem constraints in term of the decision variables	
+	- ***Last thing:*** Specify the objective function
+	- We have an optimization problem in the end. We know what we want to solve, but how is still not there
+	- The way we have defined our variables is already making some restrictions on the solutions we can explore.
