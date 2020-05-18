@@ -36,3 +36,11 @@ author: "Ditikrushna Giri"
 	- ***Last thing:*** Specify the objective function
 	- We have an optimization problem in the end. We know what we want to solve, but how is still not there
 	- The way we have defined our variables is already making some restrictions on the solutions we can explore.
+	- ***Analyzing Knapsack problem:***
+		- X<sub>i</sub> is a decision variable. Its value is 1, if it is selected and 0 if not.
+		- Constraint: Sum over i ( W<sub>i</sub>*X<sub>i</sub>) <= K
+		- Objective function : Max {Sum over i (V<sub>i</sub>*X<sub>i</sub>)}
+		- We have a lot of configurations (0,0,0,...0), (0,0,0,...,1), ... ,(1,1,1,...,1) : 2^<sup>N</sup>
+		- Not all of them are feasible as we can not exceed the capacity of the knapsack
+		- 1 milli second per problem, 50 items, 2^<sup>50</sup> evaluation will take a billion century approx.
+		- Therefore, we need a smarter way to find a high quality solution.
