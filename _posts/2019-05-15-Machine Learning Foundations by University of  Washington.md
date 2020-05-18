@@ -1,10 +1,9 @@
 
 ---
 layout: post
-title: " Machine Learning Foundations by University of  Washington"
+title: "Machine Learning Foundations by University of  Washington"
 categories: misc
 ---
-
 
 
 | Lecture No : Date | Title & Link to notes | Description |
