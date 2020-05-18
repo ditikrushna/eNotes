@@ -125,3 +125,5 @@ Tools above require a learning curve . This course uses GraphLab create that inc
 	  transform_country('USA')
 	   
 	  data['Country'].apply(transform_country)
+
+#### Week2 :[Regression: Predicting House Prices] [PPT](https://d396qusza40orc.cloudfront.net/phoenixassets/ml-foundations/regression-intro-annotated.pdf)
