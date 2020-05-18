@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: "Machine Learning Foundations: A Case Study Approach by UNIVERSITY OF WASHINGTON"
+title: " Machine Learning Foundations by University of  Washington"
 categories: misc
 ---
 
