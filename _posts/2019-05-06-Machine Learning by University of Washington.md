@@ -96,3 +96,32 @@ Case study: Recommending Products
     - Scaling up
 
 Week 6 Capstone: An intelligent application using deep learning
+
+**Getting Started with SFrame :** 
+> Machine Learning Library scikit-learn 
+> Data minipulation tool Pandas 
+Tools above require a learning curve . This course uses GraphLab create that includes SFrame. 
+
+    # Load a tabular data set 
+    data = gaphlab.SFrame('people-example.csv')
+    # View end of the table 
+    data.tail() 
+    #visulize any data structure in GraphLab Create 
+    data.show() 
+    # Categorical View 
+    data['age'].show(view='Categorical') 
+    # Some Simple Columns Operations 
+    data['age].mean()
+    data['age'].max() 
+    # Create new columns in SFrame 
+    data['Full Name'] = data['First Name] + ' ' +data['Last Name' ] 
+	# use the appy function to do a advance trasnformations of our data 
+
+	def transform_country(country):
+	      if country == 'USA':
+	     return 'United States'
+	     else:
+	      return country
+	  transform_country('USA')
+	   
+	  data['Country'].apply(transform_country)
