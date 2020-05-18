@@ -83,3 +83,33 @@ author: "Ditikrushna Giri"
 		- In this case we can order items by V<sub>i</sub>/W<sub>i</sub>
 	- Now, select the items while capactiy is not exhausted ( ***Slide 12*** )
 	- Nice example to see benefit of good relaxation(**Slide 15**). Even though artifacts can not be broken but using this sort of relaxation, helps us to come up with a nice approximation for B&B.
+- **Search Stratergies for Branch and Bound**
+	- Depth-first, best-first, least-discrepancy, and many others
+	- ***Depth-first:***
+		- *PRUNES:* when a node estimation is worse than the best found solution
+		- How efficient is it from memory stand point?
+		- *Memory efficient:* In this case, the max. memory cost would be when we go down to a branch of height K, where K is the number of items. So it is not so bad.
+	- ***Best-first:*** 
+		- Select the node with the best evaluation ( optimistic value )
+		- A greedy approach
+		- ***PRUNES:*** when all the unexpanded nodes have an optimistic value, less than that of an already found solution
+		- This repeats each time, after we expand the children of a node. ( ***Slide 8*** )
+		- Memory efficient: In worst case, we will end up storing the entire tree, which will take exponential memory!
+		- Memory footprint is less when we have a perfect evaluation from the relaxation as the number of nodes expanded would be very less.
+	- ***Least-discrepancy***
+		- Trust a greedy discrepancy
+		- Assume you have a good heuristic and makes very few mistakes
+		- Search tree is binary
+		- Branching right means heuristic was wrong, and left means it was correct
+		- Limited Discrepancy Search (LDS)
+			- Avoid mistakes
+			- Explore the search space in increasing order of allowed mistakes
+			- We trust the heuristic less and less with progression
+			- Explores the search spaces in waves (***Nice example slide 12***)
+				- No mistake
+				- One mistake ...
+		- Has a advantage over DFS, it starts exploring diff. parts of solution space in parallel
+		- ***PRUNES:*** like in Best-first search, where nodes are not explored if there optimal value is less than an already found solution.
+		- Memory efficient: compared to DFS and BFS? Depends upon the implementation. It would be a trade-off between space and time. We can save space by doing redundant calculations or vice-versa. It will be between DFS and BFS.
+	- Relaxation and Search: How to choose between them? Will be problem specific.
+	- Can you come up with a new stratergy?
