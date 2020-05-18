@@ -83,6 +83,7 @@ author: "Ditikrushna Giri"
 		- In this case we can order items by V<sub>i</sub>/W<sub>i</sub>
 	- Now, select the items while capactiy is not exhausted ( ***Slide 12*** )
 	- Nice example to see benefit of good relaxation(**Slide 15**). Even though artifacts can not be broken but using this sort of relaxation, helps us to come up with a nice approximation for B&B.
+
 - **Search Stratergies for Branch and Bound**
 	- Depth-first, best-first, least-discrepancy, and many others
 	- ***Depth-first:***
