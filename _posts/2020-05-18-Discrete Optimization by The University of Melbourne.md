@@ -44,3 +44,24 @@ author: "Ditikrushna Giri"
 		- Not all of them are feasible as we can not exceed the capacity of the knapsack
 		- 1 milli second per problem, 50 items, 2^<sup>50</sup> evaluation will take a billion century approx.
 		- Therefore, we need a smarter way to find a high quality solution.
+ - **Dynamic Programming**
+	- Finding the best knapsack solutions using dynamic programming
+	- Used hevaily in computational biology
+	- ***Basic principle:***
+		- Divide and Conquer
+		- Bottom up computation
+	- ***Basic convention ( Bellman Equations ):***
+		- Assume I = **{1,2,..n}**
+		- **O(k,j)** denotes the optimal soltuion to knapsack with capacity **K** and items **[1..j]** 
+		- Assum we know how to slove **O(k,j-1)**
+		- We want to solve **O(k,j)** that is we want to just add one more item
+		- If W<sub>j</sub> <= k
+			- Either we do not select item j, the best solution we have is O(k,j-1)
+			- We select the item j, best soltuion is V<sub>j</sub> + O(k-W<sub>j</sub>,j-1) 
+		- O(k,j) = max(O(k,j-1), V<sub>j</sub>+O(k-W<sub>j</sub>,j-1)) if W<sub>j</sub><=k else O(k,j) = O(k,j-1)
+		- Ofcourse O(k,0) = 0 for all k
+	- Understand/Code the program
+	- Discusses disadvantage of top-down with fibonnaci ( Where we compute some terms redundantly )
+	- Dynamic programming with bottom up approach
+	- Table intution for knapsack in dynamic programming ( IMPORTANT )
+	- Table intutuion for Linear equation
