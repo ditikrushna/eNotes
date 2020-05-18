@@ -114,8 +114,9 @@ author: "Ditikrushna Giri"
 		- Memory efficient: compared to DFS and BFS? Depends upon the implementation. It would be a trade-off between space and time. We can save space by doing redundant calculations or vice-versa. It will be between DFS and BFS.
 	- Relaxation and Search: How to choose between them? Will be problem specific.
 	- Can you come up with a new stratergy?
-***Exploring the material:***
-- Other course topics:
+
+- **Exploring the material:**
+ - Other course topics:
 	- Constraint Programming
 	- Local Search
 	- Mixed Integer Programming
