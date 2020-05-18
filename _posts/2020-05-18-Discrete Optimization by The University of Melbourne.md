@@ -113,3 +113,24 @@ author: "Ditikrushna Giri"
 		- Memory efficient: compared to DFS and BFS? Depends upon the implementation. It would be a trade-off between space and time. We can save space by doing redundant calculations or vice-versa. It will be between DFS and BFS.
 	- Relaxation and Search: How to choose between them? Will be problem specific.
 	- Can you come up with a new stratergy?
+***Exploring the material:***
+- Other course topics:
+	- Constraint Programming
+	- Local Search
+	- Mixed Integer Programming
+	- You can start with some initial solutions for most of the problems
+	- You can revisit the problems later
+	- ***Nice slide 5***, for giving an overview of optimization algorithms
+	- CP and DP might fail for some cases as they are large cases.
+	- Local search might scale nicely, and we might get 7 for 6 instances.
+	- I think best is to implement all!
+	- ***CP:***
+		- Like solving puzzles
+		- Lots of logic/discrete mathematics
+	- **Mixed Integer Programming**
+		- Grounded in linear algebra
+		- Lots of continuous mathematics
+	- ***Local search:***
+		- intution based, most significant coding
+		- Writing efficient code helps
+		- Lots of staring at the terminal
