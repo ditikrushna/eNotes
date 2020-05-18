@@ -65,3 +65,21 @@ author: "Ditikrushna Giri"
 	- Dynamic programming with bottom up approach
 	- Table intution for knapsack in dynamic programming ( IMPORTANT )
 	- Table intutuion for Linear equation
+- **Branch and Bound and Relaxation:**
+	- Exhaustive search explores the entire hierarchail tree
+	- In B&B we just search a part of the tree
+	- ***B&B:***
+		- Iterative two steps: Branching and Bounding
+		- **Branching:** splits problems in subproblems ( like in exhaustive search )
+		- **Bounding:** find an optimistic evaluation
+			- *maximization:* upper bound
+			- *minimization:* lower bound
+		- How to find the optimistic estimate?
+			- Relaxation
+		- Nice example 5:00 for depth first branch and bound
+			- Better approximation helps to prune tree earlier
+		- Instead of binary assignment, we can take fraction ( Belgian chocolate )
+		- This is known as linear relaxation (0 <= X<sub>i</sub> <=1)
+		- In this case we can order items by V<sub>i</sub>/W<sub>i</sub>
+	- Now, select the items while capactiy is not exhausted ( ***Slide 12*** )
+	- Nice example to see benefit of good relaxation(**Slide 15**). Even though artifacts can not be broken but using this sort of relaxation, helps us to come up with a nice approximation for B&B.
