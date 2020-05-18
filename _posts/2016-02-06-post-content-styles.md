@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Post Content Styles"
+title: "Machine Learning by University of Washington"
 categories: misc
 author: "Ditikrushna Giri"
 ---
