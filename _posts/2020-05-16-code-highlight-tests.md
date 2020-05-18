@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Discrete Optimization by The University of Melbourne"
+title: "CPC Test NITT (Tempo. Post)"
 categories: misc
 ---
 
