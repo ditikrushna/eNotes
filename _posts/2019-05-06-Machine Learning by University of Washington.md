@@ -11,8 +11,6 @@ author: "Ditikrushna Giri"
 | 4 : Jan 13, 2019| [Evaluating overfitting ][4]{:target="_blank"}  |                | 
 | 5 : Jan 14, 2019| [Quiz][5]{:target="_blank"}  |                |
 
-[1]:
-[2]:
 [3]: https://d396qusza40orc.cloudfront.net/phoenixassets/ml-foundations/regression-intro-annotated.pdf 
 [4]:https://d396qusza40orc.cloudfront.net/phoenixassets/ml-foundations/regression-intro-annotated.pdf 
  
