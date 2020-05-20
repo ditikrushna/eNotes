@@ -4,36 +4,40 @@ title: "CPC Test NITT (Tempo. Post)"
 categories: misc
 ---
 
-## Nancy_and_candies_NITT
-```
-#include <iostream>
-using namespace std;
-int main()
-{
-    long long int f,c=0,wanted;
-    cin >> f >> c >> wanted;
-    long long int ans;
-    bool solved=false;
-    while(solved != true)
-    {
-        for(int i=1;i<f;i++)
-        {
-            if(((f*i)+wanted)%c==0)
-            {
-                solved=true;
-                ans=((f*i)+wanted)/c;
-                break;
-            }
-        }
-        if(solved==false)
-        {
-            ans=-1;
-            solved=true;
-        }
-    }
-    cout << ans << endl;
+## Nancy and presents 1
+      
+    n = int(input().strip())
+    
+    in_graph = [[] for i in range(n)]
+    out_graph = [[] for i in range(n)]
+    for i in range(n):
+        k = int(input().strip())
+        if k != 0:
+            T = list(map(int, input().strip().split()))
+            for t in T:
+                out_graph[i].append(t)
+                in_graph[t].append(i)
+    
+    q = []
+    deg = [0 for i in range(n)]
+    for i in range(n):
+        if len(out_graph[i]) == 0:
+            q.append(i)
+        deg[i] = len(out_graph[i])
+            
+            
+    
+    c = 0
+    best = [1 for i in range(n)]
+    while c < len(q):
+        for i in in_graph[q[c]]:
+            best[i] = max(best[i], 1+best[q[c]])
+            deg[i] -= 1
+            if deg[i] == 0:
+                q.append(i)
+        c += 1
+    print(best[0]) 
 
-```
 
 ## Test for Java
 
