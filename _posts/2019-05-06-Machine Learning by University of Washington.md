@@ -165,3 +165,39 @@ e.g. "Sushi was great, the food was awesome, but the service was terrible"
 		- When 2 weights are non-zero: **line**
 		- When 3 weights are non-zero: **plane**
 		- When 2 weights are non-zero: **hyperplane** 
+- **Evaluating Classification Models Training and Evaluating a Classifier**
+	> ***Training a classifier = Learning the weights**
+		
+	- Split data into training and test sets
+	- Training set is passed to learned classifier to learn weights of words
+	-	Test set is evaluated by error & accuracy
+	
+	- ***Test example "Sushi was great"*** 
+		- Feed the sentence ^ to the learned classifier
+predict ŷ is +ve
+		- Pass multiple test cases and compare correct vs mistakes
+	- ***Classification error & accuracy***
+		- Error = (# mistakes) / (total # sentences)
+		- Best possible value = 0.0 
+		-  Accuracy = (# correct) / (total # sentences)
+		- Best possible value = 1.0 
+		- Error = 1 - accuracy 
+	- What's a good accuracy?
+		- Purely random guessing on a binary classification = 0.5 accuracy
+		- For k classes, accuracy = 1/k
+		- we should at least beat random guessing
+This can be counterintuitive e.g. 
+
+	> 	"90% email is spam" if we predict 100% email is spam we get 90%  accuracy
+		
+	- ***Questions to ask:***
+		- Is there class imbalance?
+		- How does it compare to a simple, baseline approach?
+    Random guessing
+    Majority class
+		- Most importantly: what accuracy does my application need?
+		- What is good enough for my users experience?
+	        - What is the impact of the mistakes we make?
+
+
+
