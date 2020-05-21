@@ -127,3 +127,35 @@ Tools above require a learning curve . This course uses GraphLab create that inc
 	  data['Country'].apply(transform_country)
 
 #### Week2 :[Regression: Predicting House Prices] [PPT](https://d396qusza40orc.cloudfront.net/phoenixassets/ml-foundations/regression-intro-annotated.pdf)
+
+### Week 3 : Classification:[PPT](https://d396qusza40orc.cloudfront.net/phoenixassets/ml-foundations/classification-annotated.pdf) 
+
+ -  **Clasification Modeling** Analyzing the Sentiment of Reviews 
+***Understand aspects of restaurant review***
+	- build a restaurant review app
+	-	categories for review e.g. experience, ramen, sushi
+	-	Break all reviews into sentences in a Sentence Sentiment Classifier
+	-	Average the predictions
+	-	Display the most positive or negative reviews 
+- **Classification Aplications**
+> Input (sentence) -> Classifier -> Output (predicted rating)
+
+- **Examples**
+	- Webpage classification by category e.g. education, finance, technology
+	- Spam filtering: checks sender, text, ipaddress, etc
+	-	Image classification
+	-	Personalized medical diagnosis
+	-	Reading your mind by [FMRI](https://g.co/kgs/Dag4BT)
+
+- **Simple Threshold Classifier**
+	-	list of +ve words: great, awesome, etc
+	-	list of -ve words: bad, terrible, etc
+	-	if # +ve words > # -ve words => ŷ = +ve else ŷ = -ve
+		Ex. "Great sushi, awesome food, but terrible service" => +2, -1
+
+- **Problems with Threshold Classifier**
+	-	Populating initial +ve and -ve word lists
+	-	Words have degrees of sentiment: e.g. "great" > "good"
+	-	Single words are not enough: "good" vs "not good"
+- The first two can be address by learning a classifier.The 3rd issue can be address by more elaborate features Word Weight great 1.5 awesome 1.2 bad -1.0 terrible -2.1 awful -3.3 restaurant, the, we, where, ... 0.0
+e.g. "Sushi was great, the food was awesome, but the service was terrible"
