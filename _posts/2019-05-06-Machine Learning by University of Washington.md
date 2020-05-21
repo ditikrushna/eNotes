@@ -197,7 +197,7 @@ This can be counterintuitive e.g.
     Majority class
 		- Most importantly: what accuracy does my application need?
 		- What is good enough for my users experience?
-	        - What is the impact of the mistakes we make?
+	       - What is the impact of the mistakes we make?
 
 
 
