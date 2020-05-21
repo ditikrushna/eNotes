@@ -159,3 +159,9 @@ Tools above require a learning curve . This course uses GraphLab create that inc
 	-	Single words are not enough: "good" vs "not good"
 - The first two can be address by learning a classifier.The 3rd issue can be address by more elaborate features Word Weight great 1.5 awesome 1.2 bad -1.0 terrible -2.1 awful -3.3 restaurant, the, we, where, ... 0.0
 e.g. "Sushi was great, the food was awesome, but the service was terrible"
+
+- **Decision Boundaries**
+	- For linear classifiers
+		- When 2 weights are non-zero: **line**
+		- When 3 weights are non-zero: **plane**
+		- When 2 weights are non-zero: **hyperplane** 
