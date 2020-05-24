@@ -36,7 +36,8 @@ categories: misc
 
 ## Heads and Tails 
 
-```#include <cmath>
+```
+#include <cmath>
 #include <cstdio>
 #include <vector>
 #include <iostream>
@@ -82,7 +83,8 @@ int main() {
 
 ## Shortest Path in Maze
 
-```#include <cmath>
+```
+#include <cmath>
 #include <cstdio>
 #include <vector>
 #include <iostream>
