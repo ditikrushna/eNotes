@@ -8,7 +8,6 @@ author: "Ditikrushna Giri"
  - **Computer Science** 
  	 
 	 - [A complete computer science study plan to become a software engineer.](https://github.com/ditikrushna/coding-interview-university)
- 	 
 	 - [List of awesome university courses for learning Computer Science!📚](https://github.com/ditikrushna/awesome-courses)
 	 - [Detailed Notes on Computer Science Topics, in One Page](https://github.com/darshanime/notes)
 	 - [ A to Z Resources for Students 👦](https://github.com/dipakkr/A-to-Z-Resources-for-Students)
