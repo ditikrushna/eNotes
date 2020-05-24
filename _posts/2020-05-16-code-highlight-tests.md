@@ -4,39 +4,34 @@ title: "CPC Test NITT (Tempo. Post)"
 categories: misc
 ---
 
-## Nancy and presents 1
-      
-    n = int(input().strip())
-    
-    in_graph = [[] for i in range(n)]
-    out_graph = [[] for i in range(n)]
-    for i in range(n):
-        k = int(input().strip())
-        if k != 0:
-            T = list(map(int, input().strip().split()))
-            for t in T:
-                out_graph[i].append(t)
-                in_graph[t].append(i)
-    
-    q = []
-    deg = [0 for i in range(n)]
-    for i in range(n):
-        if len(out_graph[i]) == 0:
-            q.append(i)
-        deg[i] = len(out_graph[i])
-            
-            
-    
-    c = 0
-    best = [1 for i in range(n)]
-    while c < len(q):
-        for i in in_graph[q[c]]:
-            best[i] = max(best[i], 1+best[q[c]])
-            deg[i] -= 1
-            if deg[i] == 0:
-                q.append(i)
-        c += 1
-    print(best[0]) 
+## Cake_Event___ 
+    #include<bits/stdc++.h>
+    using namespace std;
+    typedef long long int lli;
+    int main()
+    {
+         lli n,k,t;
+         cin>>n>>k;
+         vector<lli> a;lli sum=0;
+         a.push_back(0);
+         for(int i=1;i<=n;i++)
+         {
+             cin>>t;
+             sum+=t;
+             a.push_back(sum);
+         }
+         lli max=a[k]-a[0];
+         for(lli i=0;i<=n-k;i++)
+         {
+             if(a[i+k]-a[i]>max)
+             {
+                 max=a[k+i]-a[i];
+             }
+         }
+         cout<<max;
+         return 0;
+    } 
+
 
 
 ## Test for Java
