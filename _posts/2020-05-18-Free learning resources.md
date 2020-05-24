@@ -11,5 +11,7 @@ author: "Ditikrushna Giri"
 	 - [Some Useful Websites for Programmers.🥰](sdmg15/Best-websites-a-programmer-should-visit)
 	 - [Path to a free self-taught education in Data Science! 📊 ](https://github.com/ditikrushna/data-science)
 
+- **Competitive Programming**
+	 - [ A curated list of awesome Competitive Programming, Algorithm and Data Structure resources](https://github.com/ditikrushna/awesome-competitive-programming)
 
 	
