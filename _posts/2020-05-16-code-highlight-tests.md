@@ -82,40 +82,90 @@ int main() {
 
 ## Test for Perl
 
-```perl
-#!perl -w
- 
-# Time-stamp: <2002/04/06, 13:12:13 (EST), maverick, csvformat.pl>
-# Two pass CSV file to table formatter
- 
-$delim = $#ARGV >= 1 ? $ARGV[1] : ',';
-print STDERR "Split pattern: $delim\n";
- 
-# first pass
-open F, "<$ARGV[0]" or die;
-while(<F>)
-{
-  chomp;
-  $i = 0;
-  map { $max[$_->[1]] = $_->[0] if $_->[0] > ($max[$_->[1]] || 0) }
-    (map {[length $_, $i++]} split($delim));
+```#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <queue>
+using namespace std;
+
+struct path {
+    int row;
+    int col;
+    int dist;
+};
+
+int main() {
+    int m,n;
+    cin >> m >> n;
+    int startr,startc,endr,endc;
+    cin >> startr >> startc >> endr >> endc;
+    vector<string> grid;
+    for(int i = 0; i < m; i++) {
+        string row;
+        cin >> row;
+        grid.push_back(row);
+    }
+    queue<path> bfs;
+    path sp;
+    sp.row = startr;
+    sp.col = startc;
+    sp.dist = 0;
+    bfs.push(sp);
+    vector< vector<bool> > visited;
+    for (int i = 0; i < m; i++) {
+        vector<bool> vr;
+        for (int j = 0; j < n; j++) {
+            vr.push_back(false);
+        }
+        visited.push_back(vr);
+    }
+    int md = -1;
+    while (!bfs.empty()) {
+        path curPath = bfs.front();
+        bfs.pop();
+      //  cout << "bfs at " << curPath.row << " " << curPath.col << "\n";
+        visited[curPath.row][curPath.col] = true;
+        if (curPath.row == endr && curPath.col == endc && (md == -1 || curPath.dist < md)) {
+            md = curPath.dist;
+        }
+        if (curPath.row > 0 && grid[curPath.row-1][curPath.col] != '1' && !visited[curPath.row-1][curPath.col]) {
+            path np;
+            np.row = curPath.row-1;
+            np.col = curPath.col;
+            np.dist = curPath.dist+1;
+            visited[curPath.row-1][curPath.col] = true;
+            bfs.push(np);
+        }
+        if (curPath.col < n-1 && grid[curPath.row][curPath.col+1] != '1' && !visited[curPath.row][curPath.col+1]) {
+            path np;
+            np.row = curPath.row;
+            np.col = curPath.col+1;
+            np.dist = curPath.dist+1;
+            visited[curPath.row][curPath.col+1] = true;
+            bfs.push(np);
+        }
+        if (curPath.row < m-1 && grid[curPath.row+1][curPath.col] != '1' && !visited[curPath.row+1][curPath.col]) {
+            path np;
+            np.row = curPath.row+1;
+            np.col = curPath.col;
+            np.dist = curPath.dist+1;
+            visited[curPath.row+1][curPath.col] = true;
+            bfs.push(np);
+        }
+        if (curPath.col > 0 && grid[curPath.row][curPath.col-1] != '1' && !visited[curPath.row][curPath.col-1]) {
+            path np;
+            np.row = curPath.row;
+            np.col = curPath.col-1;
+            np.dist = curPath.dist+1;
+            visited[curPath.row][curPath.col-1] = true;
+            bfs.push(np);
+        }
+    }
+    cout << md << "\n";
+    return 0;
 }
-close F;
- 
-print STDERR 'Field width:   ', join(', ', @max), "\n";
-print STDERR join(' ', map {'-' x $_} @max);
- 
-# second pass
-open F, "<$ARGV[0]" or die;
-while(<F>)
-  {
-  chomp;
-  $i = 0;
-  map { printf("%-$max[$_->[1]]s ", $_->[0]) }
-    (map {[$_, $i++]} split($delim));
-  print "\n";
-}
-close F;
 ```
 
 ## Test for Python
