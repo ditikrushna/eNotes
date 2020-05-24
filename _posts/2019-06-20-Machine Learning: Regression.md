@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Discrete Optimization by The University of Melbourne"
+title: "Machine Learning: Regression "
 categories: misc
 author: "Ditikrushna Giri"
 ---
