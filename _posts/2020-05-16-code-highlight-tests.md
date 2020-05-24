@@ -34,25 +34,49 @@ categories: misc
 
 
 
-## Test for Java
+## Heads and Tails 
 
-```java
-import java.util.Map;
-import java.util.TreeSet;
- 
-public class GetEnv {
-  /**
-   * let's test generics
-   * @param args the command line arguments
-   */
-  public static void main(String[] args) {
-    // get a map of environment variables
-    Map<String, String> env = System.getenv();
-    // build a sorted set out of the keys and iterate
-    for(String k: new TreeSet<String>(env.keySet())) {
-      System.out.printf("%s = %s\n", k, env.get(k));
+```#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+  
+    int n;
+    cin >> n ;
+    
+    vector<string> a(n);
+    vector<int> dp(n);
+    
+    int heads = 0;
+    
+    for(int i = 0; i < n; ++i) {
+        cin >> a[i];
+        
+        if(a[i] == "H") heads++;
     }
-  }    
+    
+    if(a[0] == "H") {
+        dp[0] = -1;
+    } else {
+        dp[0] = 1;
+    }
+    
+    for(int i = 1; i < n; ++i) {
+        if(a[i] == "H") {
+            dp[i] = max(dp[i-1] - 1, -1);
+        } else {
+            dp[i] = max(dp[i-1] + 1, 1);
+        }
+    }
+    
+    cout << *max_element(dp.begin(), dp.end()) + heads << endl;
+    
+    return 0;
 }
 ```
 
