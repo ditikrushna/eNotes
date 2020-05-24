@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CPC Test NITT (Tempo. Post)"
+title: "CPC Test NITT (Temp. Post)"
 categories: misc
 author: "Ditikrushna Giri"
 ---
