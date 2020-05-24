@@ -13,5 +13,6 @@ author: "Ditikrushna Giri"
 
 - **Competitive Programming**
 	 - [ A curated list of awesome Competitive Programming, Algorithm and Data Structure resources](https://github.com/ditikrushna/awesome-competitive-programming)
+	 - [Algorithms that you must know as computer science student💻 ](https://github.com/ditikrushna/cs-algorithms) 
 
 	
