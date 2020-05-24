@@ -2,7 +2,9 @@
 layout: post
 title: "CPC Test NITT (Tempo. Post)"
 categories: misc
+author: "Ditikrushna Giri"
 ---
+
 
 ## Cake_Event___ 
     #include<bits/stdc++.h>
