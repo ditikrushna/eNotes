@@ -7,6 +7,11 @@ author: "Ditikrushna Giri"
 
 
 ## LEU - KGX 1
+This problem was inspired by the Code Con Challenger Series question "Travel to the West" https://codecon.bloomberg.com/challenger-series/3902.
+
+Leetcode 797 - https://leetcode.com/problems/all-paths-from-source-to-target/ was also useful in order to generate all possible paths.
+
+It is useful to use some form of graph representation like an adjacency list in order to solve this problem.
 
 
 
