@@ -6,33 +6,79 @@ author: "Ditikrushna Giri"
 ---
 
 
-## Cake_Event___ 
-    #include<bits/stdc++.h>
-    using namespace std;
-    typedef long long int lli;
-    int main()
-    {
-         lli n,k,t;
-         cin>>n>>k;
-         vector<lli> a;lli sum=0;
-         a.push_back(0);
-         for(int i=1;i<=n;i++)
-         {
-             cin>>t;
-             sum+=t;
-             a.push_back(sum);
-         }
-         lli max=a[k]-a[0];
-         for(lli i=0;i<=n-k;i++)
-         {
-             if(a[i+k]-a[i]>max)
-             {
-                 max=a[k+i]-a[i];
-             }
-         }
-         cout<<max;
-         return 0;
-    } 
+## LEU - KGX 1
+
+
+
+    import math
+    import os
+    import random
+    import re
+    import sys
+    import collections 
+    
+ 
+    
+    def calculate_ways(routes):
+    
+        graph = generate_graph(routes)
+        ways_to_london = calculate_unique_paths(graph, "LEU", "KGX")
+        
+        if (len(ways_to_london) == 0):
+            print("NO ROUTES BETWEEN LEUCHARS AND LONDON KINGS CROSS")
+            sys.exit()
+            
+        for possible_way in ways_to_london:
+            print(possible_way)
+        
+    # This function will return a graph which converts the routes array that has been passed into an
+    # adjacency list 
+    def generate_graph(routes):
+        
+        graph = collections.defaultdict(list)
+        
+        for route in routes:
+            source, destination = route.split()
+            graph[source].append(destination)
+    
+        return graph
+    
+    
+    # dfs traversal solution, function will be called repeatedly until destination is discovered and then backtrack
+    # algorithm derived from https://leetcode.com/problems/all-paths-from-source-to-target/solution/
+    def calculate_unique_paths(graph, source, destination):
+        def solve(node):
+            # if condition is met algorithm will backtrack
+            if node == destination: return [destination]
+            
+            ans = []
+            
+            for nei in graph[node]:
+                
+                #  now exploring neighbours of node the path has been called at
+                #  the answer is {node} + {path from nei to destination}
+                
+                for path in solve(nei):
+                    ans.append(str(node) + "->" + str(path))
+                    
+            return ans
+    
+        # returning a sorted list of paths, that are not repeated
+        return sorted(list(set(solve(source))))
+    
+    if __name__ == '__main__':
+        routes_count = int(input().strip())
+    
+        routes = []
+    
+        for _ in range(routes_count):
+            routes_item = input()
+            routes.append(routes_item)
+    
+        calculate_ways(routes)
+     
+
+
 
 
 
