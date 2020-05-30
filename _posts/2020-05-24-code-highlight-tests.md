@@ -188,6 +188,8 @@ Once an appropriate graph has been created, the shortest path can be calculated 
 
 
 
+## LEU - KGX 3 1 
+
 One possible approach to solve this problem is using Dynamic Programming.
 
 The student has a few choices each day he/she is travelling. At a particular day a student can hold a single ticket, weekly, monthly or annual season ticket.
