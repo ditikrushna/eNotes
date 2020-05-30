@@ -87,7 +87,7 @@ It is useful to use some form of graph representation like an adjacency list in 
 
 
 
-## Heads and Tails 
+## LEU - KGX 2
 
 This problem can be solved using a graph. It is also important to notice that the number of stations is small so the number of start and end combinations will be small compared to the maximum possible number of routes. This will indicate that some trains between a particular source to destination could be faster while others will be slower. The fastest route between two nodes will always be preferred and hence only this needs to be stored.
 
