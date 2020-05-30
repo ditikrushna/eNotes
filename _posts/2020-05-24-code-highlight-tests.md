@@ -184,3 +184,40 @@ Once an appropriate graph has been created, the shortest path can be calculated 
         fptr.write(str(result) + '\n')
     
         fptr.close()
+
+
+
+
+One possible approach to solve this problem is using Dynamic Programming.
+
+The student has a few choices each day he/she is travelling. At a particular day a student can hold a single ticket, weekly, monthly or annual season ticket.
+
+Minimising cost at each day travelled after sorting the array passed into the function will result in the correct answer at the last day the student chooses to travel. The dp array will be storing the minimum cost of travel up until each day the student wanted to travel.
+
+
+    #!/bin/python3
+    
+    import math
+    import os
+    import random
+    import re
+    import sys
+    import bisect
+    def solve(days_travelling):
+        costs = [100, 399, 999, 4999]
+        days_travelling.sort()
+        n = len(days_travelling)
+        dp = [0] + [float('inf')] * n
+        for i in range(n):
+            # finding out index from for a potential weekly pass and month pass will start ending at and including days_travelling[i]
+            week_pass_start_index = bisect.bisect_right(days_travelling, days_travelling[i] - 7)
+            month_pass_start_index = bisect.bisect_right(days_travelling, days_travelling[i] - 30)
+    
+            dp[i + 1] = min(dp[i] + costs[0],
+                            dp[week_pass_start_index] + costs[1],
+                            dp[month_pass_start_index] + costs[2])
+    
+        # annual pass option can only be selected once and will cover all days
+        return min(dp[-1], costs[-1])  
+
+
