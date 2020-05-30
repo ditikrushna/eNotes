@@ -88,131 +88,89 @@ It is useful to use some form of graph representation like an adjacency list in 
 
 
 ## Heads and Tails 
-    #include <cmath>
-    #include <cstdio>
-    #include <vector>
-    #include <iostream>
-    #include <algorithm>
-    using namespace std;
-    
-    
-    int main() {
-      
-        int n;
-        cin >> n ;
-        
-        vector<string> a(n);
-        vector<int> dp(n);
-        
-        int heads = 0;
-        
-        for(int i = 0; i < n; ++i) {
-            cin >> a[i];
-            
-            if(a[i] == "H") heads++;
-        }
-        
-        if(a[0] == "H") {
-            dp[0] = -1;
-        } else {
-            dp[0] = 1;
-        }
-        
-        for(int i = 1; i < n; ++i) {
-            if(a[i] == "H") {
-                dp[i] = max(dp[i-1] - 1, -1);
-            } else {
-                dp[i] = max(dp[i-1] + 1, 1);
-            }
-        }
-        
-        cout << *max_element(dp.begin(), dp.end()) + heads << endl;
-        
-        return 0;
-    }
 
-## Shortest Path in Maze
-    #include <cmath>
-    #include <cstdio>
-    #include <vector>
-    #include <iostream>
-    #include <algorithm>
-    #include <queue>
-    using namespace std;
+This problem can be solved using a graph. It is also important to notice that the number of stations is small so the number of start and end combinations will be small compared to the maximum possible number of routes. This will indicate that some trains between a particular source to destination could be faster while others will be slower. The fastest route between two nodes will always be preferred and hence only this needs to be stored.
+
+Once an appropriate graph has been created, the shortest path can be calculated using several shortest path finding algorithms.
+
+    #!/bin/python3
     
-    struct path {
-        int row;
-        int col;
-        int dist;
-    };
+    import math
+    import os
+    import random
+    import re
+    import sys
+    import collections 
     
-    int main() {
-        int m,n;
-        cin >> m >> n;
-        int startr,startc,endr,endc;
-        cin >> startr >> startc >> endr >> endc;
-        vector<string> grid;
-        for(int i = 0; i < m; i++) {
-            string row;
-            cin >> row;
-            grid.push_back(row);
-        }
-        queue<path> bfs;
-        path sp;
-        sp.row = startr;
-        sp.col = startc;
-        sp.dist = 0;
-        bfs.push(sp);
-        vector< vector<bool> > visited;
-        for (int i = 0; i < m; i++) {
-            vector<bool> vr;
-            for (int j = 0; j < n; j++) {
-                vr.push_back(false);
-            }
-            visited.push_back(vr);
-        }
-        int md = -1;
-        while (!bfs.empty()) {
-            path curPath = bfs.front();
-            bfs.pop();
-          //  cout << "bfs at " << curPath.row << " " << curPath.col << "\n";
-            visited[curPath.row][curPath.col] = true;
-            if (curPath.row == endr && curPath.col == endc && (md == -1 || curPath.dist < md)) {
-                md = curPath.dist;
-            }
-            if (curPath.row > 0 && grid[curPath.row-1][curPath.col] != '1' && !visited[curPath.row-1][curPath.col]) {
-                path np;
-                np.row = curPath.row-1;
-                np.col = curPath.col;
-                np.dist = curPath.dist+1;
-                visited[curPath.row-1][curPath.col] = true;
-                bfs.push(np);
-            }
-            if (curPath.col < n-1 && grid[curPath.row][curPath.col+1] != '1' && !visited[curPath.row][curPath.col+1]) {
-                path np;
-                np.row = curPath.row;
-                np.col = curPath.col+1;
-                np.dist = curPath.dist+1;
-                visited[curPath.row][curPath.col+1] = true;
-                bfs.push(np);
-            }
-            if (curPath.row < m-1 && grid[curPath.row+1][curPath.col] != '1' && !visited[curPath.row+1][curPath.col]) {
-                path np;
-                np.row = curPath.row+1;
-                np.col = curPath.col;
-                np.dist = curPath.dist+1;
-                visited[curPath.row+1][curPath.col] = true;
-                bfs.push(np);
-            }
-            if (curPath.col > 0 && grid[curPath.row][curPath.col-1] != '1' && !visited[curPath.row][curPath.col-1]) {
-                path np;
-                np.row = curPath.row;
-                np.col = curPath.col-1;
-                np.dist = curPath.dist+1;
-                visited[curPath.row][curPath.col-1] = true;
-                bfs.push(np);
-            }
-        }
-        cout << md << "\n";
-        return 0;
-    }
+    #
+    # Complete the 'fastest_route' function below.
+    #
+    # The function is expected to return an INTEGER.
+    # The function accepts STRING_ARRAY routes as parameter.
+    #
+    
+    all_nodes = set()
+    
+    def generate_graph(routes):
+        graph1 = collections.defaultdict(dict)
+    
+        # Due to the number of source destination pairs being considerably less
+        # than the number of routes we will get repeats in a traditional adjacency list representation
+        source_destination_pairs = set()
+    
+        for route in routes:
+            source, destination, distance = route.split()
+            if (source, destination) in source_destination_pairs:
+                curr_fastest_train_time = graph1[source][destination]
+                # storing only fastest train time
+                graph1[source][destination] = min(int(distance), curr_fastest_train_time)
+            else:
+                graph1[source][destination] = int(distance)
+            all_nodes.add(source)
+            all_nodes.add(destination)
+            source_destination_pairs.add((source, destination))
+    
+        # simplifying representation of graph 1 to a more traditional adjacency list
+        # but with a list of tuples, where each tuple stores the destination and the
+        # fastest train time to that destination
+        graph2 = collections.defaultdict(list)
+        for source in graph1:
+            for destination in graph1[source]:
+                fastest_train_time = graph1[source][destination]
+                graph2[source].append((destination, fastest_train_time))
+    
+        return graph2
+    
+    # calculating the shortest path from origin to destination
+    def shortest_path(graph, origin, destination):
+        distances = {node: float('inf') for node in all_nodes}
+    
+        # starting at origin node and hence distance to origin is set as 0
+        distances[origin] = 0
+    
+        # keeping track of discovered and undiscovered nodes
+        unseen, visited = all_nodes, set()
+    
+        # finding shortest path using dijkstra
+        while unseen:
+    
+            # finding the node which is at the closest distance that hasn't been explored
+            u = None
+            for node in unseen:
+                if u is None or distances[node] < distances[u]:
+                    u = node
+    
+            # updating unseen and visited as u is now being explored
+            unseen.remove(u)
+            visited.add(u)
+    
+            for node, dist in graph[u]:
+                if node in unseen:
+                    # finding minimum distance to the node
+                    distances[node] = min(distances[node], distances[u] + dist)
+    
+        return distances[destination]
+    
+    def fastest_route(routes):
+        graph = generate_graph(routes)
+        return shortest_path(graph, "LEU", "KGX")
