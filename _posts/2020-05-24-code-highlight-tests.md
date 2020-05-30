@@ -102,13 +102,7 @@ Once an appropriate graph has been created, the shortest path can be calculated 
     import sys
     import collections 
     
-    #
-    # Complete the 'fastest_route' function below.
-    #
-    # The function is expected to return an INTEGER.
-    # The function accepts STRING_ARRAY routes as parameter.
-    #
-    
+   
     all_nodes = set()
     
     def generate_graph(routes):
