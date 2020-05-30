@@ -92,7 +92,6 @@ It is useful to use some form of graph representation like an adjacency list in 
 This problem can be solved using a graph. It is also important to notice that the number of stations is small so the number of start and end combinations will be small compared to the maximum possible number of routes. This will indicate that some trains between a particular source to destination could be faster while others will be slower. The fastest route between two nodes will always be preferred and hence only this needs to be stored.
 
 Once an appropriate graph has been created, the shortest path can be calculated using several shortest path finding algorithms.
-
     #!/bin/python3
     
     import math
@@ -102,7 +101,7 @@ Once an appropriate graph has been created, the shortest path can be calculated 
     import sys
     import collections 
     
-   
+    
     all_nodes = set()
     
     def generate_graph(routes):
@@ -168,3 +167,20 @@ Once an appropriate graph has been created, the shortest path can be calculated 
     def fastest_route(routes):
         graph = generate_graph(routes)
         return shortest_path(graph, "LEU", "KGX")
+    
+    if __name__ == '__main__':
+        fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    
+        routes_count = int(input().strip())
+    
+        routes = []
+    
+        for _ in range(routes_count):
+            routes_item = input()
+            routes.append(routes_item)
+    
+        result = fastest_route(routes)
+    
+        fptr.write(str(result) + '\n')
+    
+        fptr.close()
