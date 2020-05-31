@@ -7,3 +7,4 @@ author: "Ditikrushna Giri"
 
 #### Day 3 : 
 1. The Least Squares Regression Line [Note](https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html)
+2. Linear Regression using Gradient Descent [Note](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931)
