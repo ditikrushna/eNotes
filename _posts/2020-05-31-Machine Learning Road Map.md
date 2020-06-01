@@ -13,3 +13,5 @@ author: "Ditikrushna Giri"
  [Blog](https://medium.com/@phuctrt/loss-functions-why-what-where-or-when-189815343d3f) 
 - 7 Regression Techniques you should know! [Blog](https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/?utm_source=blog&utm_medium=RideandLassoRegressionarticle) 
 
+#### Regularization Techniques  
+
