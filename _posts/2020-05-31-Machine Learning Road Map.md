@@ -5,6 +5,9 @@ categories: misc
 author: "Ditikrushna Giri"
 ---
 
+#### Introduction 
+- Perfect way to build a Predictive Model [Blog](https://www.analyticsvidhya.com/blog/2015/09/perfect-build-predictive-model-10-minutes/)
+
 #### Regression : 
 - 5 Questions which can teach you Multiple Regression [Blog](https://www.analyticsvidhya.com/blog/2015/10/regression-python-beginners/?utm_source=blog&utm_medium=RideandLassoRegressionarticle)
 -  The Least Squares Regression Line [Note](https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html)
