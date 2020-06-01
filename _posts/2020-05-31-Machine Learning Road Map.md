@@ -14,7 +14,7 @@ author: "Ditikrushna Giri"
 - 7 Regression Techniques you should know! [Blog](https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/?utm_source=blog&utm_medium=RideandLassoRegressionarticle) 
 - Bias Vs Variance Tradeoff [Blog](https://elitedatascience.com/bias-variance-tradeoff)
 - Overfitting [Blog](https://elitedatascience.com/overfitting-in-machine-learning)
-#### Preventative Measure Against Overfitting 
-  - Regularization
-     - Ridge and Lasso Regression [Blog](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/) 
 
+#### Preventative Measure Against Overfitting
+   -   Regularization
+        -   Ridge and Lasso Regression  [Blog](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/)
