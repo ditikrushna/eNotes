@@ -10,7 +10,8 @@ author: "Ditikrushna Giri"
 #### Grpah Algorithms by University of California, San Diego
  
  **Algothim on Graph:-**
-- Graph Basic [Slide](https://d3c33hcgiwev3.cloudfront.net/_8af30ca627bd398de2217eb59094325b_09_graph_decomposition_1_basics.pdf?Expires=1591315200&Signature=jI1UL4LDZHGbHSiGflQcJIwIBgA3kGbx10GyVFhFYLD0TDPt5J~BjDBN5bDZGbrE8jQX5HLTaeAEtXdhqRe4vZXtfQ40CYMwxmEgK0HMHxPbijatDmgobzbT5vxfrGF-DOEgaHY2G6Pdrj9C87owqWJNbAvmMVGGWSlA-GJx27Y_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A](https://d3c33hcgiwev3.cloudfront.net/_8af30ca627bd398de2217eb59094325b_09_graph_decomposition_1_basics.pdf?Expires=1591315200&Signature=jI1UL4LDZHGbHSiGflQcJIwIBgA3kGbx10GyVFhFYLD0TDPt5J~BjDBN5bDZGbrE8jQX5HLTaeAEtXdhqRe4vZXtfQ40CYMwxmEgK0HMHxPbijatDmgobzbT5vxfrGF-DOEgaHY2G6Pdrj9C87owqWJNbAvmMVGGWSlA-GJx27Y_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A) 
+- Graph Basic 
+[Slide](https://d3c33hcgiwev3.cloudfront.net/_8af30ca627bd398de2217eb59094325b_09_graph_decomposition_1_basics.pdf?Expires=1591315200&Signature=jI1UL4LDZHGbHSiGflQcJIwIBgA3kGbx10GyVFhFYLD0TDPt5J~BjDBN5bDZGbrE8jQX5HLTaeAEtXdhqRe4vZXtfQ40CYMwxmEgK0HMHxPbijatDmgobzbT5vxfrGF-DOEgaHY2G6Pdrj9C87owqWJNbAvmMVGGWSlA-GJx27Y_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - Representing Graphs [Slide]([https://d3c33hcgiwev3.cloudfront.net/_617c8fc365c080e2fa29108624242a01_09_graph_decomposition_2_representations.pdf?Expires=1591315200&Signature=ewcAA~aLYSjOfgfqeYwHnTFK5un~sbNuTNf8MhiuImI5-pbV4jSxJxXjq8WsQCCtMpZuwzuXMCu88uIkS6IPEboiUCdF-aONt6eibFYotSuD9dhTOhFI1l8xg3~YWFG6Ghw~HpaZgOw00Umk79PgHgMcDZ~Gd90llJU3G-38eXw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A](https://d3c33hcgiwev3.cloudfront.net/_617c8fc365c080e2fa29108624242a01_09_graph_decomposition_2_representations.pdf?Expires=1591315200&Signature=ewcAA~aLYSjOfgfqeYwHnTFK5un~sbNuTNf8MhiuImI5-pbV4jSxJxXjq8WsQCCtMpZuwzuXMCu88uIkS6IPEboiUCdF-aONt6eibFYotSuD9dhTOhFI1l8xg3~YWFG6Ghw~HpaZgOw00Umk79PgHgMcDZ~Gd90llJU3G-38eXw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A))
 	- Dense Graph 
 	- Sparse Graphs
