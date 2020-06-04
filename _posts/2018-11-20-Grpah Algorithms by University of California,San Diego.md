@@ -7,7 +7,7 @@ author: "Ditikrushna Giri"
 
 
 
-#### Grpah Algorithms by University of California, San Diego
+#### Algorithms on Graphs by University of California, San Diego
  
  **Algothim on Graph:-**
 - Graph Basic 
