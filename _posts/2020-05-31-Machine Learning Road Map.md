@@ -26,9 +26,8 @@ author: "Ditikrushna Giri"
 - Stochastic Gradient Descent [video](https://youtu.be/vMh0zPT0tLI) ,[Blog](https://machinelearningmastery.com/gradient-descent-for-machine-learning/) ,[Blog 2](https://tinyurl.com/y85vx839)
 
 
-#### Preventative Measure Against Overfitting
-   -   Regularization
-        -   Ridge and Lasso Regression  [Blog](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/)
+#### Regularization
+-  Ridge Regression [Video](https://youtu.be/Q81RR3yKn30)
 
 #### Classification :
  - Linear Classifiers & Logistic Regression [Video1](https://youtu.be/yIYKR4sgzI8),[Vide2](https://youtu.be/vN5cNN2-HWE),[Video3](https://youtu.be/BfKanl1aSG0),[Video4](https://youtu.be/xxFYro8QuXA)
