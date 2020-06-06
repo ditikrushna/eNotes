@@ -22,7 +22,7 @@ author: "Ditikrushna Giri"
 #### Optimization : 
 > Optimization is at the core of Machine Learning. 
 
-- Gradient Descent [Video](https://youtu.be/sDv4f4s2SB8) [Blog](https://tinyurl.com/y85vx839)
+- Gradient Descent [Video](https://youtu.be/sDv4f4s2SB8) , [Blog](https://tinyurl.com/y85vx839)
 
 
 #### Preventative Measure Against Overfitting
