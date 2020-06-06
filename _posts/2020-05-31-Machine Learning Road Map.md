@@ -24,6 +24,6 @@ author: "Ditikrushna Giri"
         -   Ridge and Lasso Regression  [Blog](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/)
 
 #### Classification :
- - Linear Classifiers & Logistic Regression [Blog](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148#:~:text=Logistic%20Regression,on%20the%20concept%20of%20probability.&text=The%20hypothesis%20of%20logistic%20regression,function%20between%200%20and%201%20.)
+ - Linear Classifiers & Logistic Regression [Blog](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148#:~:text=Logistic%20Regression,on%20the%20concept%20of%20probability.&text=The%20hypothesis%20of%20logistic%20regression,function%20between%200%20and%201%20.) [Video](https://www.youtube.com/watch?v=yIYKR4sgzI8&list=PLblh5JKOoLUKxzEP5HA2d-Li7IJkHfXSe)
  - Is Logistic Regression a linear classifier?[Blog](https://homes.cs.washington.edu/~marcotcr/blog/linear-classifiers/)
  - Confusion Matrix [Blog](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62) 
