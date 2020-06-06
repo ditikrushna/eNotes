@@ -27,7 +27,8 @@ author: "Ditikrushna Giri"
 
 
 #### Regularization
--  Ridge Regression [Video](https://youtu.be/Q81RR3yKn30)
+- Ridge Regression [Video](https://youtu.be/Q81RR3yKn30)
+- Lasoo Regression [Video](https://youtu.be/NGf0voTMlcs)
 
 #### Classification :
  - Linear Classifiers & Logistic Regression [Video1](https://youtu.be/yIYKR4sgzI8),[Vide2](https://youtu.be/vN5cNN2-HWE),[Video3](https://youtu.be/BfKanl1aSG0),[Video4](https://youtu.be/xxFYro8QuXA)
