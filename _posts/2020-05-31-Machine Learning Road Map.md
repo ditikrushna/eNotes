@@ -19,6 +19,11 @@ author: "Ditikrushna Giri"
 - Bias Vs Variance Tradeoff [Blog](https://elitedatascience.com/bias-variance-tradeoff)
 - Overfitting [Blog](https://elitedatascience.com/overfitting-in-machine-learning)
 
+#### Optimization 
+> Optimization is at the core of Machine Learning. 
+- 
+
+
 #### Preventative Measure Against Overfitting
    -   Regularization
         -   Ridge and Lasso Regression  [Blog](https://www.analyticsvidhya.com/blog/2016/01/ridge-lasso-regression-python-complete-tutorial/)
