@@ -21,3 +21,4 @@ author: "Ditikrushna Giri"
 	- Connectivity [Slides](https://d3c33hcgiwev3.cloudfront.net/_a9267009ba78cede2b66112aa0f9cdb5_09_graph_decomposition_4_connectivity.pdf?Expires=1591401600&Signature=MuBF0d5MxLJoez-27KpOQwqgWd1gydPINBt9iW7Od7WyDLeHhdEAz1JNZBPUdJWBqRv9Rlr5qmux3PWxQI15sHz90hUMpWEMU9W50kU95dTwGpgl3vbPehGNl-0wy4UOsJe28frBw6fe~ZHPTv7IK9JeLrLxsN1MwBiYJyEjjWE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - Directed Acyclic Graphs [Wiki](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 	- Topological Sort [Blog](https://www.geeksforgeeks.org/topological-sorting/)
+	- Strongly Connected Components [Blog](https://www.geeksforgeeks.org/strongly-connected-components/)
