@@ -59,7 +59,7 @@ Linear Programming deals with:
 - The linear objectives and constraints consist of linear expressions 
 
 | Element | Characteristic |Examples(Acceptable)|Examples(Not Acceptable)|
-|--|--|--|--|--|
+|--|--|--|--|
 | Objective Function |Linear  |Minimize(2*y+5*y)|minimize(2*x*y+ 5*y)
 |Constraints|Linear|2*x+5*y<=7|2*x*y+5*y<=7|
 | Constraints | Ineqalites must be of the form >= or <= No Strict ineqa;ites (< or>) are allowed.|2*x+5*y<=7 | 2*x+5*y<7|
