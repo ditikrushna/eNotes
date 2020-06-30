@@ -65,4 +65,27 @@ Linear Programming deals with:
 | Constraints | Ineqalites must be of the form >= or <= No Strict ineqa;ites (< or>) are allowed.|2*x+5*y<=7 | 2*x+5*y<7|
 |Decison variables| Continuous | x [-1,1] (x can take any real value from -1 to 1)| x{0,1}(x must be either 0 or 1)|
 
+Infeasibility : 
+- A model is infeasible when no solution exists that satisfies all the constraints . 
+- Possible reasongs : 
+	- Incorrect formulation 
+	- Incorrect data 
+	- Correct data and formulation ,but represent a real-world conflict in the system being modeled . 
+- It is not always easy to identify the source of the infeasibility. 
 
+Relaxation : 
+- Relaxation refer to changing the right-hand side of the constraint to allow some violation of the orginal constraints . 
+- Relaxation of the assembly time constraint is as follows . 
+
+
+The Simplex Algorithm : 
+- The **simplex algorithm** was the first  generaized algorithm for solving linear programming problems . 
+- It is an iterative method: 
+- Steps :  Intial feasible solution -> Test to see if the result can be improved -> Objective function can't be further improved . 
+
+A primal-dual pair : 
+- Every LP problem has an associated LP problem known as its **dual**.
+
+The dual simplex algorithm : 
+- The dual simplex algorithm uses the dual to try to find an optimal solution to the primal , regarfless of whether the solution is feasible or not . 
+- It then moves from one vertex to the other untill an optimal feasible solution to the problems is found .
