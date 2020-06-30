@@ -52,5 +52,17 @@ Feasibility vs Optimality :
  - How to analyze a simple production problem in terms of deceison variables , an objective function , and constraints .
  - Some algorithms used for optimization problems . 
  
+Linear Programming deals with:
+- The maximization (or minimization) of a linear objective function .
+- Subject to linear constraints .
+- Where all the decision variables are continous . 
+- The linear objectives and constraints consist of linear expressions 
+
+| Element | Characteristic |Examples(Acceptable)|Examples(Not Acceptable)|
+|--|--|--|--|--|
+| Objective Function |Linear  |Minimize(2*y+5*y)|minimize(2*x*y+ 5*y)
+|Constraints|Linear|2*x+5*y<=7|2*x*y+5*y<=7|
+| Constraints | Ineqalites must be of the form >= or <= No Strict ineqa;ites (< or>) are allowed.|2*x+5*y<=7 | 2*x+5*y<7|
+|Decison variables| Continuous | x [-1,1] (x can take any real value from -1 to 1)| x{0,1}(x must be either 0 or 1)|
 
 
