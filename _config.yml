@@ -1,7 +1,7 @@
 title: e-Notes # The title of the blog
 author: Ditikrushna Giri # Your name 
 email: ditikrushna.nitt@gmail.com # your email shown in the footer
-url: https://ditikrushna.me/eNotes/ # this is your site's root address.
+url: http://ditikrushna.github.io/eNotes/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
  This web page will contain the notes for the following courses: 
 favicon: "./favicon.ico" # set the favicon of the site 
